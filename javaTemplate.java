@@ -190,6 +190,12 @@ public class Arcanoid extends Application implements Runnable {
 			Score.setY(Score.getFont().getSize());
 			getChildren().add(Score);
 			
+			//pridaj image
+			Image i = new Image("img.gif");
+			ImageView imv = new ImageView(i);
+			imv.setX(10);
+			imv.setY(10);
+			
 			//vykreslenie sceny
 			for(Obdlznik o : box){
 				if(zmaz(o)){
